@@ -8,11 +8,11 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
-	},
-	adapter: {
-		$store: 'src/stores',
-		$api: 'src/routes/api'
+		adapter: adapter(),
+		alias: {
+			$store: 'src/stores',
+			$api: 'src/routes/api'
+		}
 	}
 };
 

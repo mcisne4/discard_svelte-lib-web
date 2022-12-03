@@ -1,0 +1,14 @@
+@use 'resets';
+@use 'theme_dark';
+@use 'theme_light';
+@use 'variables';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-bg-overflow);
+  color: var(--body-fg);
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
