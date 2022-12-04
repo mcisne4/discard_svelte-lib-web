@@ -65,8 +65,8 @@
     "@jridgewell/sourcemap-codec" "1.4.14"
 
 "@mcisne4/svelte-lib@mcisne4/svelte-lib-temp":
-  version "0.0.1"
-  resolved "https://codeload.github.com/mcisne4/svelte-lib-temp/tar.gz/f4f487f4a5487e45f6185c5a8fa0c2bb06af4f77"
+  version "0.0.2"
+  resolved "https://codeload.github.com/mcisne4/svelte-lib-temp/tar.gz/a20fdcaa51c913abbe48b1697d870c0ebb1fe058"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

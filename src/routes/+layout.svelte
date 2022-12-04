@@ -3,6 +3,7 @@
   import '../style/global.scss';
   import { theme } from '$store/theme';
   import { onMount } from 'svelte';
+  import NavBar from '$lib/page/NavBar.svelte';
 
   // --- THEME --- //
   let body: HTMLElement | null = null;
@@ -26,6 +27,7 @@
 
 <!-- === COMPONENT === -->
 <div class="parent-layout">
+  <NavBar />
   <main>
     <slot />
   </main>
@@ -41,5 +43,6 @@
     margin: 0 auto;
     padding: 0 var(--padding) 0;
     background-color: var(--body-bg);
+    transition: backround-color 1s;
   }
 </style>

@@ -1,5 +1,19 @@
 .theme-dark {
   --body-bg: hsl(180, 5%, 5%);
   --body-bg-overflow: hsl(180, 5%, 8%);
-  --body-fg: hsl(180, 4%, 80%);
+  --body-fg: hsl(180, 5%, 80%);
+
+  --nav-bg: hsl(180, 5%, 10%);
+  --nav-fg: hsl(180, 5%, 80%);
+  --nav-bg-highlight: hsl(180, 5%, 15%);
+  --nav-fg-highlight: hsl(180, 100%, 100%);
+  --nav-status-bg: hsl(180, 5%, 15%);
+  --nav-status-fg: hsl(180, 5%, 70%);
+
+  --nav-switch-btn-border: hsl(180, 5%, 50%);
+  --nav-switch-btn-bg: hsl(180, 5%, 15%);
+  --nav-switch-btn-bg-active: hsl(45, 90%, 50%);
+  --nav-switch-btn-fg-active: hsl(180, 5%, 15%);
+  --nav-switch-btn-bg-inactive: hsl(180, 5%, 40%);
+  --nav-switch-btn-fg-inactive: hsl(180, 5%, 8%);
 }

@@ -2,4 +2,18 @@
   --body-bg: hsl(180, 15%, 95%);
   --body-bg-overflow: hsl(180, 15%, 90%);
   --body-fg: hsl(180, 5%, 22%);
+
+  --nav-bg: hsl(180, 5%, 30%);
+  --nav-fg: hsl(180, 5%, 85%);
+  --nav-bg-highlight: hsl(180, 5%, 40%);
+  --nav-fg-highlight: hsl(180, 100%, 100%);
+  --nav-status-bg: hsl(180, 5%, 75%);
+  --nav-status-fg: hsl(180, 5%, 20%);
+
+  --nav-switch-btn-border: hsl(180, 5%, 40%);
+  --nav-switch-btn-bg: hsl(180, 5%, 55%);
+  --nav-switch-btn-bg-active: hsl(45, 90%, 50%);
+  --nav-switch-btn-fg-active: hsl(180, 5%, 25%);
+  --nav-switch-btn-bg-inactive: hsl(180, 5%, 25%);
+  --nav-switch-btn-fg-inactive: hsl(180, 5%, 65%);
 }
