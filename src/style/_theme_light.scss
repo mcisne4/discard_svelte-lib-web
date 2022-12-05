@@ -3,6 +3,7 @@
   --body-bg-overflow: hsl(180, 15%, 90%);
   --body-fg: hsl(180, 5%, 22%);
   --body-fg-highlight: hsl(180, 0%, 0%);
+  --body-fg-dim: hsl(180, 5%, 40%);
 
   --nav-bg: hsl(180, 5%, 30%);
   --nav-fg: hsl(180, 5%, 85%);
@@ -17,4 +18,16 @@
   --nav-switch-btn-fg-active: hsl(180, 5%, 25%);
   --nav-switch-btn-bg-inactive: hsl(180, 5%, 25%);
   --nav-switch-btn-fg-inactive: hsl(180, 5%, 65%);
+
+  --component-list-bg: hsl(180, 5%, 90%);
+  --component-list-fg: hsl(180, 5%, 22%);
+  --component-list-fg-dim: hsl(180, 5%, 30%);
+  --component-list-border: hsl(180, 5%, 75%);
+  --component-list-component-01: hsl(180, 5%, 27%);
+
+  --component-list-bg-hover: hsl(180, 5%, 57%);
+  --component-list-fg-hover: hsl(180, 5%, 5%);
+  --component-list-fg-dim-hover: hsl(180, 5%, 15%);
+  --component-list-border-hover: hsl(180, 5%, 40%);
+  --component-list-component-01-hover: hsl(55, 100%, 50%);
 }
