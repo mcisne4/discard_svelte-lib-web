@@ -7,9 +7,7 @@
 
   // --- THEME --- //
   let body: HTMLElement | null = null;
-  onMount(() => {
-    body = document.body;
-  });
+  onMount(() => (body = document.body));
 
   $: if (body && $theme === 'dark') {
     body.classList.add('theme-dark');

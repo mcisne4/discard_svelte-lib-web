@@ -13,3 +13,8 @@ body {
 button {
   font-family: 'Poppins', sans-serif;
 }
+
+header > * {
+  text-align: center;
+  transition: color 1s;
+}
