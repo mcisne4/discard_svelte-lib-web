@@ -66,7 +66,7 @@
 
 "@mcisne4/svelte-lib@mcisne4/svelte-lib-temp":
   version "0.0.2"
-  resolved "https://codeload.github.com/mcisne4/svelte-lib-temp/tar.gz/286003d42e943cf0734cd414fe6cb8dda8779117"
+  resolved "https://codeload.github.com/mcisne4/svelte-lib-temp/tar.gz/e65357e166a4965642bded28cb487ed8a59b5911"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

@@ -4,7 +4,8 @@
   --body-fg: hsl(180, 5%, 22%);
   --body-fg-highlight: hsl(180, 0%, 0%);
   --body-fg-dim: hsl(180, 5%, 40%);
-
+}
+.theme-light {
   --nav-bg: hsl(180, 5%, 30%);
   --nav-fg: hsl(180, 5%, 85%);
   --nav-bg-highlight: hsl(180, 5%, 40%);
@@ -18,7 +19,8 @@
   --nav-switch-btn-fg-active: hsl(180, 5%, 25%);
   --nav-switch-btn-bg-inactive: hsl(180, 5%, 25%);
   --nav-switch-btn-fg-inactive: hsl(180, 5%, 65%);
-
+}
+.theme-light {
   --component-list-bg: hsl(180, 5%, 90%);
   --component-list-fg: hsl(180, 5%, 22%);
   --component-list-fg-dim: hsl(180, 5%, 30%);
@@ -30,4 +32,27 @@
   --component-list-fg-dim-hover: hsl(180, 5%, 15%);
   --component-list-border-hover: hsl(180, 5%, 40%);
   --component-list-component-01-hover: hsl(55, 100%, 50%);
+}
+.theme-light {
+  --tab-bg: hsl(180, 5%, 75%);
+  --tab-fg: hsl(180, 5%, 20%);
+  --tab-border-color: hsl(180, 5%, 40%);
+
+  --tab-bg-hover: hsl(180, 5%, 35%);
+  --tab-fg-hover: hsl(180, 5%, 95%);
+  --tab-border-color-hover: hsl(180, 5%, 25%);
+
+  --tab-active-bg: hsl(180, 5%, 5%);
+  --tab-active-fg: hsl(180, 5%, 95%);
+  --tab-active-border-color: hsl(180, 5%, 30%);
+
+  --tab-row-border-color: hsl(180, 5%, 5%);
+  --tab-area-bg: hsl(180, 10%, 85%);
+}
+.theme-light {
+  --code-block-bg: hsl(180, 5%, 95%);
+  --code-block-fg: hsl(180, 5%, 10%);
+  --code-block-accent-bg: hsl(180, 5%, 45%);
+  --code-block-accent-fg: hsl(180, 5%, 10%);
+  --code-block-accent-fg-highlight: hsl(180, 5%, 4%);
 }

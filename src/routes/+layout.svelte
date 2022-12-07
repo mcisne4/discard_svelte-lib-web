@@ -43,4 +43,10 @@
     background-color: var(--body-bg);
     transition: backround-color 1s;
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 </style>
