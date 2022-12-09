@@ -1,7 +1,7 @@
 // === IMPORTS === //
 import type { ComponentType } from 'svelte';
 import {
-  SvgCarrot,
+  SvgCaret,
   SvgCode,
   SvgCodeEdit,
   SvgCodePage,
@@ -12,7 +12,7 @@ import {
 
 // === MAIN === //
 export const svgIconsStatic = createComponentList([
-  { component: SvgCarrot, name: 'SvgCarrot', style: '--svg-fill: none;' },
+  { component: SvgCaret, name: 'SvgCaret', style: '--svg-fill: none;' },
   { component: SvgCode, name: 'SvgCode' },
   { component: SvgCodeEdit, name: 'SvgCodeEdit' },
   { component: SvgCodePage, name: 'SvgCodePage' },
