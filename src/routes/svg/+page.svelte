@@ -1,63 +1,8 @@
 <!-- === TYPESCRIPT === -->
 <script lang="ts">
-  import {
-    SvgCarrot,
-    SvgCode,
-    SvgCodeEdit,
-    SvgCodePage,
-    SvgHome,
-    SvgMoon,
-    SvgSun,
-  } from '@mcisne4/svelte-lib/svg';
   import ComponentList from '$lib/components/ComponentList.svelte';
-  import type { ComponentType } from 'svelte';
   import ComponentListItem from '$lib/components/ComponentListItem.svelte';
-
-  // --- SVG Icons Static --- //
-  function createSvgList(components: { svg: ComponentType; style?: string }[]) {
-    return components
-      .map(({ svg, style }) => {
-        return {
-          svg,
-          style: style ? style : '',
-          componentName: svg.name ? svg.name : '',
-          hover: false,
-        };
-      })
-      .map(({ svg, style, componentName, hover }) => {
-        let displayName: string = componentName;
-        if (displayName.toLowerCase().startsWith('svg')) displayName = displayName.slice(3);
-        displayName = displayName
-          .replace(/_/g, ' ')
-          .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
-          .replace(/([a-z])([0-9])/g, '$1 $2')
-          .replace(/([0-9])([a-z])/g, '$1 $2')
-          .trim();
-        return {
-          svg,
-          style,
-          componentName,
-          displayName,
-          url: `svg/${componentName}`,
-          hover,
-        };
-      })
-      .sort((a, b) => {
-        if (a.displayName > b.displayName) return 1;
-        if (a.displayName < b.displayName) return -1;
-        return 0;
-      });
-  }
-
-  const svgIcons_static = createSvgList([
-    { svg: SvgCarrot, style: '--svg-fill: none;' },
-    { svg: SvgCode },
-    { svg: SvgCodeEdit },
-    { svg: SvgCodePage },
-    { svg: SvgHome },
-    { svg: SvgMoon },
-    { svg: SvgSun },
-  ]);
+  import { svgIconsStatic } from './component-list';
 </script>
 
 <!-- === HEAD === -->
@@ -70,7 +15,7 @@
 
 <h2>SVG Icons <em>(static)</em></h2>
 <ComponentList>
-  {#each svgIcons_static as { svg, componentName, displayName, url, style, hover }}
+  {#each svgIconsStatic as { component, componentName, displayName, url, style, hover }}
     <ComponentListItem
       {componentName}
       {displayName}
@@ -81,7 +26,7 @@
       width="10rem"
     >
       <div class="svg" class:hover>
-        <svelte:component this={svg} {style} />
+        <svelte:component this={component} {style} />
       </div>
     </ComponentListItem>
   {/each}
