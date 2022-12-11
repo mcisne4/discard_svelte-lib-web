@@ -6,8 +6,8 @@
   import { createSyntaxProps } from '$lib/tabs/SvgIconsStatic_Syntax';
 
   // --- COMPONENT --- //
-  import { SvgCode } from '@mcisne4/svelte-lib/svg';
-  const svg = SvgCode;
+  import { SvgHome } from '@mcisne4/svelte-lib/svg';
+  const svg = SvgHome;
 
   // --- COMPONENT PAGE PROPS --- //
   export let data: PageData;

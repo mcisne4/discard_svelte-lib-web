@@ -12,7 +12,7 @@ export const load: PageServerLoad = async () => {
     return {
       cssFallbacks: results[0],
       code: results[1],
-      componentName: 'SvgCode',
+      componentName: 'SvgMoon',
     };
   });
 
