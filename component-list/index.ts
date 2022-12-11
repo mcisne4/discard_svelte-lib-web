@@ -13,7 +13,7 @@ async function main() {
   console.log('  Components Found:', component_list.length);
 
   // --- Copy Svelte Components --- //
-  const codeDir = 'src/code/lib';
+  const codeDir = 'src/routes';
 
   await Promise.all(
     component_list.map((path) => {
@@ -45,7 +45,7 @@ function fetchWriteFile(path: string, destination: string): Promise<boolean> {
   return new Promise(async (resolve, reject) => {
     // ___ Variables ___ //
     const url = 'https://raw.githubusercontent.com/mcisne4/svelte-lib/main/' + path;
-    const filename = path.replace('src/lib', destination).replace('.svelte', '.txt');
+    const filename = path.replace('src/lib', destination).replace('.svelte', '/code.txt');
     const folder = dirname(filename);
 
     // ___ Fetch Data ___ //

@@ -13,10 +13,11 @@
   } from '$lib/components/inputs';
 
   import { SvgCaret } from '@mcisne4/svelte-lib/svg';
+  const svg = SvgCaret;
 
   export let data: PageData;
 
-  const componentName = 'SvgCarret';
+  const componentName = data.componentName;
   const props = { ...createSyntaxProps(componentName), componentName, code: data.code };
 
   // --- STYLE PROP --- //
@@ -43,7 +44,8 @@
 <ComponentPage {...props}>
   <!-- --- SVG --- -->
   <div class="svg">
-    <SvgCaret {style} />
+    <!-- <SvgCaret {style} /> -->
+    <svelte:component this={svg} {style} />
   </div>
 
   <!-- --- TAB: Attributes --- -->
