@@ -12,11 +12,11 @@
     InputText,
   } from '$lib/components/inputs';
 
-  import { SvgCaret } from '@mcisne4/svelte-lib/svg';
+  import { SvgCode } from '@mcisne4/svelte-lib/svg';
 
   export let data: PageData;
 
-  const componentName = 'SvgCarret';
+  const componentName = 'SvgCode';
   const props = { ...createSyntaxProps(componentName), componentName, code: data.code };
 
   // --- STYLE PROP --- //
@@ -43,7 +43,7 @@
 <ComponentPage {...props}>
   <!-- --- SVG --- -->
   <div class="svg">
-    <SvgCaret {style} />
+    <SvgCode {style} />
   </div>
 
   <!-- --- TAB: Attributes --- -->
@@ -55,7 +55,7 @@
     <!-- ___ --svg-fill ___ -->
     <InputColor
       description="--svg-fill"
-      defaultValue="none"
+      defaultValue="#000000"
       on:valid={(e) => (values.fill = e.detail)}
     />
 
@@ -69,7 +69,7 @@
     <!-- ___ --svg-stroke-width ___ -->
     <InputNumber
       description="--svg-stroke-width"
-      defaultValue={80}
+      defaultValue={20}
       on:valid={(e) => (values.strokeWidth = e.detail)}
       inputWidth="5rem"
     />
@@ -108,6 +108,5 @@
     --svg-fill: #f6f;
     --svg-stroke: #f0f;
     --svg-height: 10rem;
-    --svg-fill: none;
   }
 </style>
