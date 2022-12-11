@@ -45,14 +45,18 @@ function fetchWriteFile(path: string, destination: string): Promise<boolean> {
   return new Promise(async (resolve, reject) => {
     // ___ Variables ___ //
     const url = 'https://raw.githubusercontent.com/mcisne4/svelte-lib/main/' + path;
-    const filename = path.replace('src/lib', destination).replace('.svelte', '/code.txt');
+    const filename = path.replace('src/lib', destination).replace('.svelte', '/code.ts');
     const folder = dirname(filename);
 
     // ___ Fetch Data ___ //
-    const data = await axios
+    let data = await axios
       .get(url)
       .then((res) => res.data)
       .catch((err) => reject(err));
+
+    // ___ Modify Data ___ //
+    data = data.replace(/`/g, '`');
+    data = `export const code = \`${data}\`;`;
 
     // ___ Make Directory ___ //
     if (!existsSync(folder)) {

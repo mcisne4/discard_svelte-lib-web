@@ -1,4 +1,4 @@
-<!-- === SCRIPT === -->
+export const code = `<!-- === SCRIPT === -->
 <script lang="ts">
   export let style = '';
 </script>
@@ -28,3 +28,4 @@
     transition: var(--svg-transition, none);
   }
 </style>
+`;

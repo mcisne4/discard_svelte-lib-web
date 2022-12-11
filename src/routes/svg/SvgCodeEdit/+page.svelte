@@ -1,21 +1,21 @@
 <!-- === TYPESCRIPT === -->
 <script lang="ts">
-  import type { PageData } from './$types';
   import ComponentPage from '$lib/page/ComponentPage.svelte';
   import SvgIconsStatic_Attributes from '$lib/tabs/SvgIconsStatic_Attributes.svelte';
   import { createSyntaxProps } from '$lib/tabs/SvgIconsStatic_Syntax';
+  import { code } from './code';
+  import { cssFallbacks } from './cssFallbacks';
 
   // --- COMPONENT --- //
   import { SvgCodeEdit } from '@mcisne4/svelte-lib/svg';
   const svg = SvgCodeEdit;
+  const componentName = 'SvgCodeEdit';
 
   // --- COMPONENT PAGE PROPS --- //
-  export let data: PageData;
-
   const props = {
-    ...createSyntaxProps(data.componentName),
-    componentName: data.componentName,
-    code: data.code,
+    ...createSyntaxProps(componentName),
+    componentName,
+    code,
   };
 
   // --- STYLE PROP --- //
@@ -31,7 +31,7 @@
   </div>
 
   <!-- --- TAB: Attributes --- -->
-  <SvgIconsStatic_Attributes slot="attributes" cssVariableFallbacks={data.cssFallbacks} />
+  <SvgIconsStatic_Attributes slot="attributes" cssVariableFallbacks={cssFallbacks} />
 
   <!-- --- TAB: Playground --- -->
   <Playground slot="playground" on:styleChange={(e) => (style = e.detail)} />
