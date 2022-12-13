@@ -1,25 +1,38 @@
 // === IMPORTS === //
 import type { ComponentType } from 'svelte';
-import {
-  SvgCaret,
-  SvgCode,
-  SvgCodeEdit,
-  SvgCodePage,
-  SvgHome,
-  SvgMoon,
-  SvgSun,
-} from '@mcisne4/svelte-lib/svg';
+import { SvgCaret } from '@mcisne4/svelte-lib/svg';
 
 // === MAIN === //
-export let svgIconsStatic = createComponentList([
-  { component: SvgCaret, name: 'SvgCaret', style: '--svg-fill: none;' },
-  { component: SvgCode, name: 'SvgCode' },
-  { component: SvgCodeEdit, name: 'SvgCodeEdit' },
-  { component: SvgCodePage, name: 'SvgCodePage' },
-  { component: SvgHome, name: 'SvgHome' },
-  { component: SvgMoon, name: 'SvgMoon' },
-  { component: SvgSun, name: 'SvgSun' },
-]);
+export let svgIconsStatic2 = [
+  {
+    component: SvgCaret,
+    componentName: 'SvgCaret',
+    displayName: 'Caret',
+    style: '--svg-fill: none;',
+    url: 'svg/SvgCaret',
+    hovered: false,
+  },
+];
+
+export const svgIconsStatic4 = [
+  {
+    component: SvgCaret,
+    componentName: 'SvgCaret',
+    displayName: 'Caret',
+    url: '/svg',
+    hovered: false,
+  },
+];
+
+// export let svgIconsStatic2 = createComponentList([
+//   { component: SvgCaret, name: 'SvgCaret', style: '--svg-fill: none;' },
+//   { component: SvgCode, name: 'SvgCode' },
+//   { component: SvgCodeEdit, name: 'SvgCodeEdit' },
+//   { component: SvgCodePage, name: 'SvgCodePage' },
+//   { component: SvgHome, name: 'SvgHome' },
+//   { component: SvgMoon, name: 'SvgMoon' },
+//   { component: SvgSun, name: 'SvgSun' },
+// ]);
 
 // === HELPER FUNCTIONS === //
 function createComponentList(
